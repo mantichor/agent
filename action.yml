@@ -1,0 +1,11 @@
+name: mantichor-agent
+description: fetch data from mantichor central
+outputs:
+  manifest:
+    description: portainer json manifest
+runs:
+  using: docker
+  image: 'docker://docker.io/pinjammodal/mantichor-agent:v1.0.0'
+branding:
+  icon: terminal
+  color: purple
