@@ -7,6 +7,10 @@ outputs:
     description: status or error message
   status_code:
     description: response status code
+  base_image:
+    description: docker base image
+  bypass_code_scan:
+    description: bypass snyk code scan
 runs:
   using: docker
   image: 'docker://docker.io/gradity/mantichor-agent:v0.1.5'
