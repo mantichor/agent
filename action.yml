@@ -3,9 +3,13 @@ description: fetch data from mantichor central
 outputs:
   manifest:
     description: portainer json manifest
+  message:
+    description: status or error message
+  status_code:
+    description: response status code
 runs:
   using: docker
-  image: 'docker://docker.io/gradity/mantichor-agent:v0.1.4'
+  image: 'docker://docker.io/gradity/mantichor-agent:v0.1.5'
 branding:
   icon: cpu
   color: purple
