@@ -14,6 +14,9 @@ outputs:
 runs:
   using: docker
   image: 'docker://docker.io/gradity/mantichor-agent:v0.1.6'
+  shell: bash
+  run: |
+        .main >> $GITHUB_OUTPUT
 branding:
   icon: cpu
   color: purple
