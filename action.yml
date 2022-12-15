@@ -14,7 +14,7 @@ outputs:
 runs:
   using: docker
   image: 'docker://docker.io/gradity/mantichor-agent:v0.1.6'
-  post-entrypoint: ["echo test"]
+  post-entrypoint: "echo test"
 branding:
   icon: cpu
   color: purple
