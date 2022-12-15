@@ -9,12 +9,17 @@ outputs:
     description: response status code
   base_image:
     description: docker base image
+    value: ${{ steps.mantichor-agent.outputs.base_image }}
   bypass_code_scan:
     description: bypass snyk code scan
 runs:
   using: docker
   image: 'docker://docker.io/gradity/mantichor-agent:v0.1.6'
-  post-entrypoint: "echo test"
+  steps:
+    - id: mantichor-agent
+      run: |
+            /app >> $GITHUB_OUTPUT
+            /app
 branding:
   icon: cpu
   color: purple
