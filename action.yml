@@ -14,7 +14,6 @@ outputs:
 runs:
   using: docker
   image: 'docker://docker.io/gradity/mantichor-agent:v0.1.7'
-
 branding:
   icon: cpu
   color: purple
