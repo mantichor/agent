@@ -13,7 +13,7 @@ outputs:
     description: bypass snyk code scan
 runs:
   using: docker
-  image: 'docker://docker.io/gradity/mantichor-agent:v0.1.9'
+  image: 'docker://docker.io/gradity/mantichor-agent:v0.1.8'
 branding:
   icon: cpu
   color: purple
